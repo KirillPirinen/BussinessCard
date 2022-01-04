@@ -1,0 +1,28 @@
+.container {
+  margin: 0 20px;
+  height: 36px;
+
+  div {
+    color: #fff;
+    padding: 10px;
+    background: #F2994A;
+    box-shadow: -11.09px 18.13px 36.6483px rgba(242, 153, 74, 0.13);
+    border-radius: 3px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: background-color .7s;
+
+    &:hover {
+      cursor: pointer;
+      padding:8px;
+      border: 2px solid #F2994A;
+      background:rgba(242, 153, 74, 0.0);
+    }
+  }
+}

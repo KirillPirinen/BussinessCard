@@ -1,0 +1,130 @@
+.info-modal {
+  min-height: 100%;
+  min-width: 100%;
+  background-color: rgba(28, 31, 29, 0.6);
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  z-index: 1000;
+}
+.clickhere {
+  animation: clickhere 4s infinite;
+}
+.info-modal.active {
+  display: flex;
+}
+
+.info-modal_content {
+  position: fixed;
+  top: 25%;
+  text-align: center;
+  width: 70%;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: -4px 4px 51px 10px rgba(34, 60, 80, 0.24);
+  height: auto;
+  animation-duration: 0.5s;
+  animation-name: modalshadow;
+  color: white;
+  h3 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    color: #8dc4b0;
+  }
+  h4 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 50px;
+  
+    color: #8dc4b0;
+  }
+  p {
+    font-family: Gilroy-SemiBold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #8476AA;
+  }
+    .form {
+      font-size: 20px;
+      width: 100%;
+      min-height: 80px;
+      padding: 20px;
+      background: rgba(36, 38, 93, 0.95);
+      backdrop-filter: blur(134px);
+      border-radius: 10px;
+
+      input {
+        background-color: #2E3061;
+        color: white;
+      }
+      .text {
+        height: 56px;
+        width: 308px;
+        border-radius: 5px;
+      }
+      .area {
+        height: 106px;
+        width: 308px;
+        border-radius: 5px;
+      }
+      button {
+        border: 0;
+        border-radius: 0;
+        appearance: none;
+        color: #fff;
+        padding: 10px;
+        background: #F2994A;
+        box-shadow: -11.09px 18.13px 36.6483px rgba(242, 153, 74, 0.13);
+        border-radius: 3px;
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: background-color .7s;
+        width: 20%;
+    
+        &:hover {
+          cursor: pointer;
+          padding:8px;
+          border: 2px solid #F2994A;
+          background:rgba(242, 153, 74, 0.0);
+        }
+      }
+  }
+}
+
+@keyframes modalshadow {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 25%;
+  }
+}
+
+@keyframes clickhere {
+  0% {
+    opacity: 0.5;
+    margin-top: 500px;
+  }
+  50% {
+    opacity: 2;
+    margin-top: 650px;
+  }
+  100% {
+    opacity: 0.5;
+    margin-top: 500px;
+  }
+}

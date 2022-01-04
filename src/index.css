@@ -1,13 +1,71 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: Inter;
+  src: url("../public/Inter.ttf") format("truetype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  min-width: 700px;
+  min-height: 100%;
+}
+html {
+  background:linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%) no-repeat;
+  overflow-x: hidden;
+}
+
+@media (max-width: 800px) {
+  html {
+    overflow:auto;
+  }
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  min-height: 100%;
+}
+.main_container {
+  margin: 3% 10% 0;
+  overflow: auto;
+}
+
+.main_container h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  color: #8dc4b0;
+}
+.main_container h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+
+  color: #8dc4b0;
+}
+.main_container p {
+  font-family: Gilroy-SemiBold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #8476AA;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+.fade-exit {
+  display: none;
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  display: none;
 }
