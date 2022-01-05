@@ -1,5 +1,5 @@
 import styles from "./About.module.scss"
-import photo from "../../../photo.png";
+import photo from "../../../photo_.png";
 import { FrontIcons } from "./FrontIcons";
 import { BackIcons } from "./BackIcons";
 import { CommonIcons } from "./CommonIcons";
