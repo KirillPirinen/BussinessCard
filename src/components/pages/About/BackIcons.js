@@ -1,10 +1,10 @@
 import styles from "./About.module.scss"
 import { SiExpress, SiNodedotjs, SiPostgresql, SiSequelize, SiRedis, SiNextdotjs } from 'react-icons/si';
 
-export const BackIcons = () => {
+export const BackIcons = ({back}) => {
   return (
     <>
-    <h4>Technologies I use on Back-end part: </h4>
+    <h4>{back}</h4>
 
     <div className={styles.container}>
 

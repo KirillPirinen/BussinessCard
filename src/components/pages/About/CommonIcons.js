@@ -2,10 +2,10 @@ import styles from "./About.module.scss"
 import { SiGit, SiJest, SiCypress, SiNpm, SiJavascript, SiTypescript, SiExpo, SiPostman } from 'react-icons/si';
 import { MdHttp } from 'react-icons/md'
 
-export const CommonIcons = () => {
+export const CommonIcons = ({common}) => {
   return (
     <>
-    <h4>Common technologies: </h4>
+    <h4>{common}</h4>
 
     <div className={styles.container}>
 

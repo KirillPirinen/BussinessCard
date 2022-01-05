@@ -2,10 +2,10 @@ import styles from "./About.module.scss"
 import { FaReact, FaSass } from 'react-icons/fa';
 import { SiRedux, SiHtml5, SiCss3, SiMaterialui, SiBootstrap, SiWebpack, SiReduxsaga, SiReactrouter, SiFigma } from 'react-icons/si';
 
-export const FrontIcons = () => {
+export const FrontIcons = ({front}) => {
   return (
     <>
-    <h4>Technologies I use on Front-end part: </h4>
+    <h4>{front}</h4>
 
     <div className={styles.container}>
 

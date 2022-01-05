@@ -1,12 +1,10 @@
 import { Navlink } from "./Navlink"
-import styles from "./Navpanel.module.css"
+import styles from "./Navpanel.module.scss"
 
-export const Navpanel = () => {
+export const Navpanel = ({navpanel}) => {
   return (
     <nav className={styles.container}>
-      <Navlink to='/' text='Home' />
-      <Navlink to='/about' text='About me' />
-      <Navlink to='/contacts' text='Contacts' />
+      {navpanel?.map(link => <Navlink key={link.name} to={link.path} text={link.name} />)}
     </nav>
   )
 }

@@ -18,7 +18,7 @@
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap; 
   .content {
     width: 60%;
@@ -48,4 +48,27 @@
     color: white;
     opacity: 0.5;
   }
+}
+
+@media (max-width:650px) {
+  .wrapper {
+    h4 {
+      text-align: center;
+      width: 95%;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap; 
+      .content {
+        width: 60%;
+      }
+      .image {
+        width: 250px;
+        height: 400px;
+      }
+    }
+  }
+  
 }

@@ -4,19 +4,15 @@
 }
 
 html {
-  min-width: 700px;
+  min-width: 650px;
   min-height: 100%;
 }
+
 html {
   background:linear-gradient(222.26deg, #3B1D60 1.22%, #040D3E 106.28%) no-repeat;
   overflow-x: hidden;
 }
 
-@media (max-width: 800px) {
-  html {
-    overflow:auto;
-  }
-}
 
 #root {
   display: flex;
@@ -43,7 +39,7 @@ html {
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 50px;
+  line-height: 40px;
 
   color: #8dc4b0;
 }
@@ -68,4 +64,25 @@ html {
 .fade-exit-active {
   opacity: 0;
   display: none;
+}
+
+/*mobile*/
+@media (max-width:650px) {
+  html {
+    min-width: 200px;
+    min-height: 100%;
+  }
+  .main_container {
+    margin: 2%;
+  }
+  .main_container h4 {
+    font-size: 18px;
+  }
+  .main_container p {
+    font-size: 16px;
+  }
+  .main_container h3 {
+    font-size: 22px;
+    line-height: 30px;
+  }
 }

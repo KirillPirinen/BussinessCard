@@ -4,26 +4,31 @@ import { FrontIcons } from "./FrontIcons";
 import { BackIcons } from "./BackIcons";
 import { CommonIcons } from "./CommonIcons";
 
-export const About = () => {
+export const About = ({about}) => {
   return (
   <div className={styles.wrapper}>
   <div className={styles.container}>
     <div className={styles.content}>
-      <h3>Hi there ! I'm Kirill and 
-        I'am a JavaScript Developer from Moscow!
-        <hr/>
-        I can help you with building your own Amazon 😉.
-      </h3>
+      {about.h3?.map((el, i, arr) => {
+        if(arr[i+1]) {
+          return (
+            <h3 key={String(i)}>{el}<hr/></h3>
+          )
+        } else {
+          return <h3 key={String(i)}>{el}</h3>
+        }
+      })}
 
-      <p>🤟 I like to write code!</p>
-      <p>🤔 Where can you find me?</p>
+      {
+        about.p?.map((el, i)=><p key={String(i)}>{el}</p>)
+      }
 
     </div>
-    <img className={styles.image} src={photo}></img>
+    <img alt="photo" className={styles.image} src={photo}></img>
   </div>
-  <FrontIcons/>
-  <BackIcons/>
-  <CommonIcons/>
+    <FrontIcons front={about.front}/>
+    <BackIcons back={about.back}/>
+    <CommonIcons common={about.common}/>
   </div>
   )
 }

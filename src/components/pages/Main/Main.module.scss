@@ -6,14 +6,30 @@
 
   .content {
     height: 100%;
-    width: 40%;
+    width: 50%;
   }
 
   .image {
     background: url("/Vector.png") no-repeat right top;
     background-size:contain;
-    width: 60%;
-    min-width: 500px;
+    width: 50%;
+    min-width: 250px;
     min-height: 500px;
   }
+}
+
+@media (max-width:650px) {
+  .container{
+    flex-direction: column;
+    align-items: center;
+    .image {
+      width: 60%;
+      min-height: 200px;
+      background-position: top center;
+    }
+    .content {
+      width: 90%;
+    }
+  }
+  
 }
