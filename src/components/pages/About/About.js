@@ -24,7 +24,7 @@ export const About = ({about}) => {
       }
 
     </div>
-    <img alt="photo" className={styles.image} src={photo}></img>
+    <img alt="Personal" className={styles.image} src={photo}></img>
   </div>
     <FrontIcons front={about.front}/>
     <BackIcons back={about.back}/>

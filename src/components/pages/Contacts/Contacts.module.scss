@@ -8,7 +8,7 @@
     min-width: 31%;
     text-align: center;
     
-      .effect > a {
+      .effect > a, .effect > span {
         cursor: pointer;
         padding: 2px 20px;
         box-shadow: inset 0 0 0 0 #F2994A;
@@ -28,7 +28,7 @@
   @media (max-width:650px) {
     .container {
       div {
-        .effect > a {
+        .effect > a, .effect > span {
           padding: 2px 0;
           font-size: 18px;
       }

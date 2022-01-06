@@ -13,7 +13,7 @@ export const Modal = ({signal, clickBodyHandler, modal}) => {
          (
           <div className={styles.message}>
          <h4>{modal.successSent}</h4>
-          <a onClick={setMessage.bind(null, false)}>{modal.succesRetry}</a>
+          <button onClick={setMessage.bind(null, false)}>{modal.succesRetry}</button>
          </div>
          )
          )
@@ -23,7 +23,7 @@ export const Modal = ({signal, clickBodyHandler, modal}) => {
           (
           <div className={styles.message}>
             <h4>{modal.failSent}</h4>
-            <a onClick={setMessage.bind(null, false)}>{modal.failRetry}</a>
+            <button onClick={setMessage.bind(null, false)}>{modal.failRetry}</button>
           </div>
           )
         )

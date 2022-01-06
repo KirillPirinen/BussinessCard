@@ -14,7 +14,7 @@ export const Contacts = ({setModal, contacts}) => {
                 <div key={String(i)}>
                   <h4>{el.h4}</h4>
                     <span className={styles.effect}>
-                      <a href={el.a.href} target="_blank">{el.a.text}</a>
+                      <a href={el.a.href} target="_blank" rel="noreferrer">{el.a.text}</a>
                     </span>
                   <p>{el.p}</p>
                 </div>
@@ -24,7 +24,7 @@ export const Contacts = ({setModal, contacts}) => {
                 <div key={String(i)}>
                 <h4>{el.h4}</h4>
                 <span className={styles.effect}>
-                    <a onClick={setModal.bind(null, true)}>{el.a.text}</a>
+                    <span onClick={setModal.bind(null, true)}>{el.a.text}</span>
                 </span>
                 <p>{el.p}</p>
               </div>
